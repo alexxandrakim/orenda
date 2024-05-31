@@ -1,0 +1,598 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Hygiene Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Hygiene Regular'), url('HYGIENE_.woff') format('woff');
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #2c2800;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d4d2b4;
+    position: relative;
+    display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: #f5f5f5;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: #d4d2b4;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    color: #2c2800;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #d4d2b4;
+    color: #2c2800;
+}
+
+.header_top {
+    background-color: #2c2800;
+    color: #d4d2b4;
+    padding: 10px;
+}
+
+.header_top {
+    text-align: center;
+}
+
+.header_bottom {
+    background-color: #d4d2b4;
+
+}
+
+.header_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_bottom ul {
+    display: flex;
+}
+
+.header_bottom ul li {
+    padding-right: 25px;
+}
+
+.header_bottom ul a:hover {
+    text-decoration: underline;
+}
+
+.services {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services h5 {
+    font-size: 14px;
+}
+
+.service1,
+.service2,
+.service3 {
+    text-align: center;
+    border-right: 2px solid #2c2800;
+    padding-right: 25px;
+
+}
+
+.products {
+    background-image: url(../img/product_bg.jpg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.perfume {
+    max-width: 100%;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.perfume1,
+.perfume2,
+.perfume3,
+.perfume4 {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    align-content: center;
+    line-height: 30px;
+}
+
+.perfume1 img,
+.perfume2 img,
+.perfume3 img,
+.perfume4 img {
+    width: 100%;
+}
+
+.products ul li {
+
+    width: 23.5%;
+}
+
+.products ul li img {
+    width: 100%;
+}
+
+.products ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.perfume a:hover .hover {
+    opacity: 1;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+.btn a {
+    border: 2px solid #f5f5f5;
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+
+}
+
+.btn a:hover {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.bloom {
+    margin-bottom: 100px
+}
+
+.bloom img {
+    width: 100%;
+}
+
+.bestsellers {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.best1,
+.best2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.best1_text p,
+.best2_text p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.best1_text h4,
+.best2_text h4 {
+    padding-top: 15px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    line-height: 48px;
+}
+
+.table h3 {
+    text-decoration: underline;
+}
+
+.table p {
+    padding: 0px;
+}
+
+.polaroid {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.polaroid ul {
+    display: flex;
+}
+
+.polaroid img {
+    width: 100%;
+}
+
+.polaroid a img:hover {
+    transform: translateY(-100px);
+    transition: all 0.5s;
+}
+
+.addtobag {
+    margin-top: 40px;
+}
+
+.addtobag a {
+    border: 2px solid #2c2800;
+    padding: 10px;
+    width: 100px;
+    font-weight: lighter;
+}
+
+.addtobag a:hover {
+    font-weight: bold;
+    border: 2px solid #d4d2b4;
+    background-color: #d4d2b4;
+}
+
+footer {
+    background-color: #baa88a;
+}
+
+
+.footer_inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.footer_inner ul {
+    display: flex;
+}
+
+.footer_inner ul li {
+    padding-right: 15px;
+}
+
+.footer_text p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer_text ul li a:hover {
+    font-weight: bold;
+}
+
+.sns ul li a img:hover {
+    transform: translateY(-7px);
+    transition: all 0.5s;
+}
+
+/*테블릿 미디어쿼리*/
+@media (min-width:600px) and (max-width:1199px) {
+    header {
+        width: 100%
+    }
+
+    .services {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .bestsellers {
+        width: 100%;
+    }
+
+    .bestsellers img {
+        max-width: 100%;
+    }
+
+    .products {
+        max-width: 100%;
+    }
+
+
+    .products ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .products ul li {
+        margin-top: 40px;
+
+    }
+
+    .products ul li {
+        width: 40%;
+    }
+
+    .bestsellers img {
+        max-width: 100%;
+    }
+
+    .best1 {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .best2 {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+
+    .t1,
+    .t2,
+    .t3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .polaroid {
+        margin-bottom: 10px;
+    }
+
+    .polaroid ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .polaroid ul li {
+        width: 50%;
+    }
+
+    .footer_inner {
+        width: 100%;
+        display: block;
+    }
+
+    .logo_footer {
+        text-align: center;
+    }
+
+    .footer_text {
+        text-align: center;
+    }
+
+    .footer_text ul {
+        justify-content: center;
+    }
+
+    .sns ul {
+        justify-content: center;
+    }
+
+}
+
+/*모바일 미디어쿼리*/
+@media (max-width:599px) {
+    .topnav {
+        display: block;
+    }
+
+    .header {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    .header_top {
+        display: none;
+    }
+
+    .header_bottom {
+        width: 100%;
+        display: none;
+        justify-items: center;
+
+    }
+
+    .header_bottom h1 {
+        text-align: center;
+
+    }
+
+    .header_bottom ul {
+        justify-content: center;
+        padding-bottom: 10px;
+
+    }
+
+    .services {
+        width: 100%;
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+    .services h4 {
+        font-size: larger;
+    }
+
+    .service1,
+    .service2,
+    .service3 {
+        border-bottom: 2px solid #d4d2b4;
+        border-right: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+
+    .products ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .products ul li {
+        margin-top: 40px;
+    }
+
+    .products ul li {
+        width: 70%;
+    }
+
+
+    .polaroid ul {
+        flex-wrap: wrap;
+    }
+
+    .polaroid ul li {
+        margin-top: 20px;
+    }
+
+    .polaroid {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bestsellers {
+        width: 100%;
+    }
+
+    .bestsellers img {
+        max-width: 100%;
+    }
+
+    .best1,
+    .best2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .best1_img {
+        width: 60%;
+    }
+
+    .best2_img {
+        order: 1;
+        width: 60%;
+
+    }
+
+    .best2_text {
+        order: 2;
+
+    }
+
+    .footer_inner {
+        width: 100%;
+        display: block;
+    }
+
+    .logo_footer {
+        text-align: center;
+    }
+
+    .logo_footer img {
+        width: 100px;
+    }
+
+    .footer_text {
+        text-align: center;
+    }
+
+    .footer_text ul {
+        justify-content: center;
+    }
+
+    .sns ul {
+        justify-content: center;
+    }
+}
